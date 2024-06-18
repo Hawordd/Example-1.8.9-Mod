@@ -1,6 +1,6 @@
-package com.example.commands
+package cloud.matthis.commands
 
-import com.example.errors.CommandError
+import cloud.matthis.errors.CommandError
 import net.minecraft.command.CommandBase
 import net.minecraft.command.ICommandSender
 import net.minecraft.util.BlockPos

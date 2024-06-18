@@ -1,7 +1,7 @@
-package com.example.config
+package cloud.matthis.config
 
-import com.example.config.categories.ExampleModConfig
-import com.example.errors.ConfigError
+import cloud.matthis.config.categories.ExampleModConfig
+import cloud.matthis.errors.ConfigError
 import com.google.gson.GsonBuilder
 import com.google.gson.TypeAdapter
 import com.google.gson.stream.JsonReader

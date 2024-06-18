@@ -1,7 +1,7 @@
-package com.example.features
+package cloud.matthis.features
 
-import com.example.ExampleMod
-import com.example.utils.ChatUtils
+import cloud.matthis.SkySniper
+import cloud.matthis.utils.ChatUtils
 import net.minecraftforge.client.event.ClientChatReceivedEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 
@@ -12,7 +12,7 @@ class ChatFeatures {
         if (event.type.toInt() == 2) return
 
         val message = event.message.formattedText
-        if (ExampleMod.config.secondCategory.chat.duplicateChatMessage) {
+        if (SkySniper.config.secondCategory.chat.duplicateChatMessage) {
             ChatUtils.messageToChat(message)
         }
     }

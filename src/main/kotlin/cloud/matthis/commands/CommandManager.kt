@@ -1,8 +1,8 @@
-package com.example.commands
+package cloud.matthis.commands
 
-import com.example.ExampleMod
-import com.example.commands.SimpleCommand.ProcessCommandRunnable
-import com.example.utils.ChatUtils
+import cloud.matthis.SkySniper
+import cloud.matthis.commands.SimpleCommand.ProcessCommandRunnable
+import cloud.matthis.utils.ChatUtils
 import net.minecraft.command.ICommandSender
 import net.minecraft.util.BlockPos
 import net.minecraftforge.client.ClientCommandHandler
@@ -13,8 +13,8 @@ class CommandManager {
         registerCommand("testcommand") {
             ChatUtils.messageToChat("Test successful.")
         }
-        registerCommand("openconfig") {
-            ExampleMod.configManager.openConfigGui()
+        registerCommand("skysniper") {
+            SkySniper.configManager.openConfigGui()
         }
         registerCommand("formatmessage") { args ->
             val colorName = args.firstOrNull()

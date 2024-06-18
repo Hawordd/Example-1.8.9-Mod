@@ -11,11 +11,11 @@ plugins {
 
 //Constants:
 
-val baseGroup: String by project
+val baseGroup = "cloud.matthis"
 val mcVersion: String by project
 val version: String by project
 val mixinGroup = "$baseGroup.mixin"
-val modid: String by project
+val modid = "skysniper"
 
 // Toolchains:
 java {
